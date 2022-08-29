@@ -13,18 +13,19 @@ h1 {
     text-align: center;
 }
 
-.conteneur {
-    height: 100;
+#conteneur {
+    height: 100%;
     
 
 }
-.blocs{
+#blocs{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
     margin: 1rem;
     justify-content: center;
+    color: blue;
  
     
 }
@@ -32,14 +33,120 @@ h1 {
     border: 2px solid black;
  background-color: gold;
     width: 45%;
-    height: 300px; 
+    height: 267px; 
 }
 p{
     position: relative;
     top: 50%;
     left: 50%;
     writing-mode: vertical-lr;
-    color: blue;
-    font-size: large;
+    
+    font-size: x-large;
     font-weight: bold;
+}
+#boutton{
+width: 70px;
+background-color: red;
+height: 50px;
+margin-bottom: 20px;
+
+
+
+}
+#boutton1{
+    display: flex;
+    justify-content: center;
+}
+.donne{
+    font-size: 20px;
+    color: black;
+    font-size: larger;
+    
+}
+.infos{
+    background-color:gold;
+    font-size: larger;
+    width: 50%;
+    
+}
+#titre{
+    
+}
+
+/*si l'ecran est inf ou égal alors {...} */
+@media( max-width: 700px){
+
+    #blocs{width: 100%;
+        flex-direction: column;
+    }
+    .bloc{
+         width: 100%;
+        height: 40px;
+    
+    }
+    span{
+        writing-mode: horizontal-tb;
+        margin: 5px;
+    }
+    #button{
+        margin-left: 45%;
+    }
+    img{width: 100%;
+        height: 200px;
+
+    }
+}
+#contain{
+    
+  
+}
+#contact
+{
+   text-align: center;
+display: inline;
+
+
+}
+.form-label{
+ display: flex;  
+ flex-direction: column;
+text-align: center;
+font-size: x-large;
+font-weight: bold;
+
+
+
+}
+.form-control{
+
+border-radius: 1rem;
+background-color: gold;
+font-size: larger;
+
+
+
+}
+.button{
+    background-color: aqua;
+    font-size: x-large;
+   margin-left: 50%
+   
+   
+}
+.form-control{
+    width: 50%;
+padding: 10px
+
+}
+#oumy{
+    display: flex;
+    background-color: antiquewhite;
+}
+#souka{
+    width: 50%;
+}
+
+.nouveauCouleur{
+    background-color: orange;
+    color: white;
 }

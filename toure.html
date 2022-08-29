@@ -3,35 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <title>TP NUMERO 1 HTML/CSS</title>
-    <link href="/home/oumy/Desktop/toureoumy/toure.css" rel="stylesheet" type="text/css">
-   
+   <link rel="stylesheet" href="toure.css">
+  
 </head> 
 <body>
     <main>
         <img src="fleure.jpeg" alt="">
-        <section class="conteneur">
+        <section id="conteneur">
            <h1>Mon premier TP: Tidiane Touré</h1>
            
-            <section class="blocs">
-                <div class="bloc">
-                    <p>bloc 1</p>
+            <section id="blocs">
+                <div class="bloc"> <p >bloc 1</p>
                 </div>
             
-                <div class="bloc">
-                    <p>bloc 2</p>
+                <div class="bloc"> <p>bloc 2</p>
                 </div>
 
-                <div class="bloc">
-                    <p>bloc 3</p>
-                </div>
+                <div class="bloc" ><p>bloc 3</p></div>
                
-                <div class="bloc">
-                    <p>bloc 4</p>
-                </div>
+                <div class="bloc" ><p >bloc 4</p></div>
         
             </section>
+            <div id="boutton1"> 
+                <button id="boutton" onclick="Oumy()">changer</button>
+
+            </div>
+           
         </section>
-        
+
+   
+     <div>
+    <h1>contactez-nous</h1>
+<div id="contact" >
+    <div>
+        <label for="prenom" class="form-label">Prenom</label>
+        <input type="prenom" class="form-control" id="Prenom" placeholder="votre prenom">
+    </div>
+    <div class="test">
+        <label for="nom" class="form-label">Nom</label>
+        <input type="nom" class="form-control" id="Nom" placeholder="votre nom">
+    </div>
+    <div class="test">
+        <label for="telephone" class="form-label">Nom</label>
+        <input type="Telephone" class="form-control" id="Telephone" placeholder="TELEPHONE">
+    </div>
+
+    <label for=""></label>
+    <div class="test">
+       <label for="email" class="form-label">Email</label>
+       <input type="email" class="form-control" id="Email" placeholder="Votre email">
+    </div>
+    <div>
+        <label for="commentaire" class="form-label">commentaire</label>
+       <textarea class="form-control" id="commentaire" rows="10"></textarea>
+    </div>
+    <button type="submit" class="button" onclick="afficherFormulaire() " >Envoyer</button>
+</div>
+
+  </div>
+
+  <section id="right">
+      <div id="titre">
+      <h2>Voici vos informations :</h2>
+    </div>
+    <div  class="donne"> Prenom:</div>
+      <div  class="infos" id="Div1"> </div>
+   <div  class="donne"> Nom:</div>
+    <div  class="infos"id="Div2"></div>
+     <div class="donne" >Numero:</div>
+   <div  class="infos" id="Div3"></div>
+<div  class="donne"> Email :</div> 
+  <div  class="infos"id="Div4"></div>
+    <div  class="donne"> Message:</div>
+     <div  class="infos"id="Div5"></div>
+  </section>
+
+
+  
+
     </main>
+    <script src="toure.js"></script>
+</body>
 
 </html>
