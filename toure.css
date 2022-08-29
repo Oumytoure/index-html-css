@@ -64,14 +64,12 @@ margin-bottom: 20px;
     
 }
 .infos{
-    background-color:gold;
+    background-color:white;
     font-size: larger;
     width: 50%;
     
 }
-#titre{
-    
-}
+
 
 /*si l'ecran est inf ou égal alors {...} */
 @media( max-width: 700px){
